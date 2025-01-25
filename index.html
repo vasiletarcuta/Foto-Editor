@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor Foto</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <h1>Editor</br> Foto</h1>
+            <label id="adaugaImagine" for="imagineUpload">Alege</br>Fișierul</label>
+            <input type="file" id="imagineUpload" accept="image/*">
+            <button id="saveBtn">Salvează Imaginea</button>
+            <button id="decupareBtn">Decupare</button>
+            <button id="albNegruBtn">Alb-Negru</button>
+            <button id="bttnNegativ">Negativ</button>
+            <button id="adugaTextBtn">Adaugă Text</button>
+            <button id="stergereSelectieButon">Sterge selectia</button>
+        </div>
+    </div>
+
+    <div class="container-optiuni-text">
+        <form>
+            <label>Text</label><br />
+            <input id="textInput" type="text" /><br />
+            <label>Dimensiune</label><br />
+            <input id="dimensiuneInput" type="text" /><br />
+            <label>Culoare</label>
+            <input id="culoareInput" type="color" /><br />
+            <label>Pozitie</label><br />
+            <label>X: </label><input id="pozitieXInput" type="text" /><br />
+            <label>Y: </label><input id="pozitieYInput" type="text" />
+        </form>
+    </div>
+
+    <p id="coordonateCursor"></p>
+
+    <div class="container-canvas">
+        <canvas id="imagineCanvas"></canvas>
+    </div>
+
+
+    <div class="container-histograma">
+        <canvas id="histogramaCanvas"></canvas>
+        <p id="titluHisto">Histograma</p>
+    </div>
+
+</body>

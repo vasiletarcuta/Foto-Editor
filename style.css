@@ -1,0 +1,179 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9e4bb;
+}
+
+header {
+    background-color: #280f43;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: 'Courier New';
+    font-weight: bold;
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.container-imagine {
+    max-width: 1200px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#imagineUpload {
+    display: none;
+}
+
+#fileName {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+    margin-top: 10px;
+}
+
+.file-name {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px;
+}
+
+.sectiune {
+    margin: 20px 0;
+}
+
+.adaugare {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #280f43;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .adaugare:hover {
+        background-color: #3700b3;
+    }
+
+.toolbar {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #280f43;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+    button:hover {
+        background-color: #613669;
+        transform: scale(1.05);
+    }
+
+    button:active {
+        transform: scale(0.95);
+    }
+
+    button:disabled {
+        background-color: #b0bec5;
+        cursor: not-allowed;
+    }
+
+.container-canvas {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#imagineCanvas {
+    border: 3px solid #613669;
+    cursor: crosshair;
+}
+
+#adaugaImagine {
+    padding: 7px 12px 7px 12px;
+    background-color: deeppink;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+#coordonateCursor {
+    background-color: burlywood;
+    padding: 4px 4px 4px 4px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container-histograma {
+    margin-top: 10px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+#titluHisto {
+    text-align: center;
+    font-family: 'Courier New';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#histogramaCanvas {
+    background-color: black;
+}
+
+.container-optiuni-text {
+    margin-right: 160px;
+    margin-bottom: -60px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    align-self: end;
+}
